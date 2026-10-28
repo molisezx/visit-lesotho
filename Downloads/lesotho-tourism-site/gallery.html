@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery | Kingdom in the Sky: Lesotho</title>
+<meta name="description" content="Photo gallery of Lesotho: Katse Dam, Maletsunyane Falls, Sani Pass and culture.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+<nav class="navbar navbar-expand-lg site-nav" aria-label="Main navigation">
+ <div class="container">
+  <a class="navbar-brand" href="index.html">Kingdom in the <span>Sky</span></a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse" id="nav">
+   <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="destinations.html">Destinations</a></li><li><a class="dropdown-item" href="activities.html">Activities</a></li><li><a class="dropdown-item" href="gallery.html" aria-current=page>Gallery</a></li></ul></li>
+    <li class="nav-item"><a class="nav-link" href="accommodation.html">Stay</a></li>
+    <li class="nav-item ms-lg-2"><a class="btn btn-ochre btn-sm" href="contact.html">Book a trip</a></li>
+   </ul>
+  </div>
+ </div>
+</nav>
+<div class="stripe" aria-hidden="true"></div>
+</header>
+<main id="main">
+<div class="page-head"><div class="container">
+<nav aria-label="breadcrumb"><ol class="breadcrumb mb-3"><li class="breadcrumb-item"><a href="index.html">Home</a></li><li class="breadcrumb-item active" aria-current="page">Gallery</li></ol></nav>
+<h1 style="font-size:clamp(2.2rem,5vw,3.6rem)">Photo gallery</h1><p>Tap a photo to open the lightbox. Use the arrows, thumbnails or your keyboard to move between images.</p></div></div>
+
+<section><div class="container">
+ <div class="d-flex flex-wrap gap-2 mb-4" role="group" aria-label="Filter photos">
+  <button type="button" class="btn btn-outline-navy active" data-filter="all">All</button>
+  <button type="button" class="btn btn-outline-navy" data-filter="nature">Nature</button>
+  <button type="button" class="btn btn-outline-navy" data-filter="adventure">Adventure</button>
+  <button type="button" class="btn btn-outline-navy" data-filter="culture">Culture</button>
+ </div>
+ <div class="row g-3"><div class="col-12 col-sm-6 col-lg-3 g-col"><button class="g-item" type="button" data-src="images/katse-dam.jpg" data-caption="Katse Dam from above" data-cat="nature"><img src="images/katse-dam.jpg" alt="Katse Dam and its reservoir seen from above" loading="lazy"><span class="g-cap">Katse Dam from above</span></button></div><div class="col-12 col-sm-6 col-lg-3 g-col"><button class="g-item" type="button" data-src="images/maletsunyane-falls.jpg" data-caption="Maletsunyane Falls" data-cat="nature adventure"><img src="images/maletsunyane-falls.jpg" alt="Maletsunyane Falls dropping into the gorge" loading="lazy"><span class="g-cap">Maletsunyane Falls</span></button></div><div class="col-12 col-sm-6 col-lg-3 g-col"><button class="g-item" type="button" data-src="images/sani-pass.jpg" data-caption="Sani Pass switchbacks" data-cat="adventure"><img src="images/sani-pass.jpg" alt="Sani Pass road winding up the escarpment" loading="lazy"><span class="g-cap">Sani Pass switchbacks</span></button></div><div class="col-12 col-sm-6 col-lg-3 g-col"><button class="g-item" type="button" data-src="images/cultural-amphitheatre.jpg" data-caption="Cultural centre amphitheatre" data-cat="culture"><img src="images/cultural-amphitheatre.jpg" alt="Thatched cultural centre and amphitheatre" loading="lazy"><span class="g-cap">Cultural centre amphitheatre</span></button></div></div>
+</div></section>
+<div class="modal fade lightbox" id="lightbox" tabindex="-1" aria-labelledby="lbCaption" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
+ <div class="modal-header border-0"><p class="modal-title fw-semibold mb-0" id="lbCaption"></p><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+ <div class="modal-body"><img class="lb-main" id="lbImg" src="" alt=""></div>
+ <div class="modal-footer border-0 flex-column gap-3"><div class="lb-thumbs" id="lbThumbs"></div><div class="d-flex gap-2"><button class="btn btn-line" id="lbPrev" type="button">Previous</button><button class="btn btn-ochre" id="lbNext" type="button">Next</button></div></div>
+</div></div></div>
+</main>
+<footer class="site-footer">
+<div class="stripe-sm mb-4" aria-hidden="true"></div>
+<div class="container">
+ <div class="row g-4">
+  <div class="col-12 col-md-6 col-lg-5"><h2>Kingdom in the Sky</h2><p>A student-built tourism guide to Lesotho: high mountains, deep gorges and the warmth of the Basotho people.</p></div>
+  <div class="col-6 col-md-3 col-lg-3 offset-lg-1"><h2>Explore</h2><ul><li><a href="destinations.html">Destinations</a></li><li><a href="activities.html">Activities</a></li><li><a href="gallery.html">Gallery</a></li></ul></div>
+  <div class="col-6 col-md-3 col-lg-3"><h2>Plan</h2><ul><li><a href="accommodation.html">Accommodation</a></li><li><a href="contact.html">Book a trip</a></li><li><a href="contact.html#register">Register</a></li></ul></div>
+ </div>
+ <hr class="border-secondary mt-4">
+ <p class="small mb-0">&copy; 2026 Kingdom in the Sky. Coursework project, Principles of Web Design (BIWD2110/DIWD2110), Limkokwing University of Creative Technology, Lesotho.</p>
+</div>
+</footer>
+<button id="toTop" class="btn btn-ochre" type="button" aria-label="Back to top">Top</button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
