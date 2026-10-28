@@ -1,0 +1,35 @@
+/* Simple stylesheet - Lesotho Tourism */
+:root { --navy:#16264a; --gold:#e0a030; --light:#f2f0ea; }
+body { font-family: Arial, sans-serif; color:#222; line-height:1.6; }
+h1, h2, h3 { color:var(--navy); font-weight:700; }
+
+.navbar { background:var(--navy); }
+.navbar-brand, .nav-link { color:#fff !important; }
+.nav-link:hover, .nav-link.active { color:var(--gold) !important; }
+
+.btn-gold { background:var(--gold); color:#222; border:none; padding:10px 24px; transition:0.3s; }
+.btn-gold:hover { background:#c98a1f; transform:translateY(-2px); }
+
+.hero { background:var(--navy); color:#fff; padding:70px 0; }
+.hero h1 { color:#fff; font-size:2.6rem; }
+.hero span { color:var(--gold); }
+
+.page-title { background:var(--navy); color:#fff; padding:40px 0; }
+.page-title h1 { color:#fff; }
+
+section { padding:50px 0; }
+.bg-light-sand { background:var(--light); }
+
+.card { border:none; border-radius:12px; overflow:hidden; box-shadow:0 4px 14px rgba(0,0,0,0.12); transition:0.3s; height:100%; }
+.card:hover { transform:translateY(-6px); }
+.card img { height:210px; object-fit:cover; }
+
+.gallery-img { width:100%; height:230px; object-fit:cover; border-radius:10px; cursor:pointer; transition:0.3s; }
+.gallery-img:hover { transform:scale(1.04); }
+
+.form-box { background:#fff; padding:30px; border-radius:12px; border-top:6px solid var(--gold); box-shadow:0 4px 14px rgba(0,0,0,0.12); }
+.accordion-button:not(.collapsed) { background:var(--light); color:var(--navy); }
+
+footer { background:var(--navy); color:#fff; padding:25px 0; text-align:center; }
+
+@media (max-width:576px) { .hero h1 { font-size:1.9rem; } }
